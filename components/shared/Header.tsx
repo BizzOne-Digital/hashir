@@ -29,13 +29,13 @@ export default function Header({ settings }: HeaderProps) {
 
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
+    { href: '/industries', label: 'Industries' },
+    { href: '/how-it-works', label: 'How It Works' },
     { href: '/services', label: 'Services' },
-    { href: '/booking', label: 'Booking' },
-    { href: '/gallery', label: 'Gallery' },
-    { href: '/testimonials', label: 'Testimonials' },
+    { href: '/service-areas', label: 'Service Areas' },
+    { href: '/shop', label: 'Shop' },
+    { href: '/about', label: 'About' },
     { href: '/faqs', label: 'FAQs' },
-    { href: '/blog', label: 'Blog' },
     { href: '/contact', label: 'Contact' },
   ];
 
@@ -73,10 +73,10 @@ export default function Header({ settings }: HeaderProps) {
             <span className="hidden md:inline text-xs text-white/80">{settings.officeHours}</span>
           )}
           <Link
-            href="/booking"
+            href="/track"
             className="text-mlks-orange hover:text-mlks-orange-dark font-medium transition-colors"
           >
-            Request Delivery →
+            Track My Delivery →
           </Link>
         </div>
       </div>
@@ -116,10 +116,15 @@ export default function Header({ settings }: HeaderProps) {
             </nav>
 
             {/* CTA Button */}
-            <div className="hidden lg:block">
-              <Link href="/booking">
+            <div className="hidden lg:flex items-center gap-3">
+              <Link href="/track">
+                <Button variant="outline" size="md">
+                  Track Delivery
+                </Button>
+              </Link>
+              <Link href="/become-a-partner">
                 <Button variant="primary" size="md">
-                  Request a Delivery
+                  Become a Partner
                 </Button>
               </Link>
             </div>
@@ -154,9 +159,14 @@ export default function Header({ settings }: HeaderProps) {
               {link.label}
             </Link>
           ))}
-          <Link href="/booking" onClick={() => setIsMobileMenuOpen(false)}>
+          <Link href="/track" onClick={() => setIsMobileMenuOpen(false)}>
+            <Button variant="outline" size="md" className="w-full">
+              Track Delivery
+            </Button>
+          </Link>
+          <Link href="/become-a-partner" onClick={() => setIsMobileMenuOpen(false)}>
             <Button variant="primary" size="md" className="w-full">
-              Request a Delivery
+              Become a Partner
             </Button>
           </Link>
         </nav>

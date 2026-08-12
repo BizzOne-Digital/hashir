@@ -127,11 +127,15 @@ export default function Footer({ settings }: FooterProps) {
               <ul className="space-y-2">
                 {[
                   { href: '/', label: 'Home' },
-                  { href: '/about', label: 'About Us' },
+                  { href: '/industries', label: 'Industries' },
+                  { href: '/how-it-works', label: 'How It Works' },
                   { href: '/services', label: 'Services' },
-                  { href: '/booking', label: 'Request Delivery' },
-                  { href: '/gallery', label: 'Gallery' },
-                  { href: '/testimonials', label: 'Testimonials' },
+                  { href: '/service-areas', label: 'Service Areas' },
+                  { href: '/track', label: 'Track Delivery' },
+                  { href: '/shop', label: 'Shop' },
+                  { href: '/become-a-partner', label: 'Become a Partner' },
+                  { href: '/about', label: 'About Us' },
+                  { href: '/contact', label: 'Contact' },
                 ].map((link) => (
                   <li key={link.href}>
                     <Link
@@ -150,18 +154,18 @@ export default function Footer({ settings }: FooterProps) {
               <h3 className="text-lg font-bold mb-4 text-mlks-orange">Our Services</h3>
               <ul className="space-y-2">
                 {[
-                  'Secure Packaging',
-                  'Delivery Management',
-                  'Same-Day Delivery',
-                  'Scheduled Deliveries',
-                  'Reverse Logistics',
+                  { href: '/industries/pharmacy', label: 'Pharmacy Delivery' },
+                  { href: '/industries/law-firms', label: 'Law Firm Delivery' },
+                  { href: '/services', label: 'Same-Day Delivery' },
+                  { href: '/services', label: 'Scheduled Deliveries' },
+                  { href: '/services', label: 'Temperature Controlled' },
                 ].map((service) => (
-                  <li key={service}>
+                  <li key={service.label}>
                     <Link
-                      href="/services"
+                      href={service.href}
                       className="text-white/80 hover:text-mlks-orange transition-colors text-sm"
                     >
-                      {service}
+                      {service.label}
                     </Link>
                   </li>
                 ))}

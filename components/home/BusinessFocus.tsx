@@ -79,9 +79,9 @@ export default function BusinessFocus() {
             </FadeIn>
 
             <FadeIn direction="right" delay={0.4}>
-              <Link href="/about">
+              <Link href="/industries">
                 <button className="inline-flex items-center gap-2 text-mlks-orange font-bold hover:gap-4 transition-all text-sm md:text-base">
-                  Learn More About Us
+                  Explore Industries We Serve
                   <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
                 </button>
               </Link>
