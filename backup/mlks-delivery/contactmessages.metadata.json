@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"read":{"$numberInt":"1"}},"name":"read_1"},{"v":{"$numberInt":"2"},"key":{"createdAt":{"$numberInt":"-1"}},"name":"createdAt_-1"}],"uuid":"0b6dc58b6ddd49c49a4f787cb8bccfb8","collectionName":"contactmessages","type":"collection"}
