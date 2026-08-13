@@ -135,6 +135,7 @@ export default function Footer({ settings }: FooterProps) {
                   { href: '/shop', label: 'Shop' },
                   { href: '/become-a-partner', label: 'Become a Partner' },
                   { href: '/about', label: 'About Us' },
+                  { href: '/faqs', label: 'FAQs' },
                   { href: '/contact', label: 'Contact' },
                 ].map((link) => (
                   <li key={link.href}>
