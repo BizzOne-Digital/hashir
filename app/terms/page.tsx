@@ -199,7 +199,6 @@ export default async function TermsPage() {
                 <ul>
                   <li>Email: {settings?.email || 'info@mlksdelivery.com'}</li>
                   <li>Phone: {settings?.primaryPhone || '+1 (519) 778-3390'}</li>
-                  <li>Address: {settings?.address || 'Suite 817, 470 Sentinel Road, Toronto, Ontario, M3J 1V6, Canada'}</li>
                 </ul>
               </div>
             </FadeIn>

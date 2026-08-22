@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 
 interface FooterProps {
   settings?: {
@@ -9,7 +9,6 @@ interface FooterProps {
     footerDescription?: string;
     email?: string;
     primaryPhone?: string;
-    address?: string;
     officeHours?: string;
     facebook?: string;
     instagram?: string;
@@ -197,12 +196,6 @@ export default function Footer({ settings }: FooterProps) {
                       <Mail size={18} className="mt-0.5 flex-shrink-0" />
                       <span>{settings.email}</span>
                     </a>
-                  </li>
-                )}
-                {settings?.address && (
-                  <li className="flex items-start gap-3 text-white/80 text-sm">
-                    <MapPin size={18} className="mt-0.5 flex-shrink-0" />
-                    <span>{settings.address}</span>
                   </li>
                 )}
                 {settings?.officeHours && (

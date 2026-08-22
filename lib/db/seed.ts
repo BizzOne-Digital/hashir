@@ -55,7 +55,6 @@ async function seedDatabase(reset: boolean = false) {
         tagline: 'Handled With Care. Delivered With Purpose.',
         email: 'info@mlksdelivery.com',
         primaryPhone: '+1 (519) 778-3390',
-        address: 'Suite 817, 470 Sentinel Road, Toronto, Ontario, M3J 1V6, Canada',
         officeHours: 'Monday–Saturday: 9:00 AM–7:00 PM | Sunday: Closed',
         supportHours: 'Monday–Saturday: 9:00 AM–7:00 PM',
         bookingEnabled: true,
@@ -68,6 +67,9 @@ async function seedDatabase(reset: boolean = false) {
       });
       console.log('✅ Site settings created');
     }
+
+    // Remove stored business address from all settings records
+    await SiteSettings.updateMany({}, { $unset: { address: 1 } });
 
     // Services
     const existingServices = await Service.countDocuments();

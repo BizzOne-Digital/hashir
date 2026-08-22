@@ -104,13 +104,13 @@ export default function Header({ settings }: HeaderProps) {
         )}
       >
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center h-[72px] lg:h-20 gap-4">
+          <div className="flex justify-between items-center h-[5.5rem] lg:h-28 gap-4">
             {/* Logo */}
             <Link href="/" className="flex-shrink-0 group">
               <img
                 src="/images/logo.png"
                 alt="MLKS Delivery Solutions"
-                className="h-12 lg:h-14 w-auto object-contain transition-transform group-hover:scale-105"
+                className="h-[4.5rem] lg:h-24 xl:h-28 w-auto object-contain transition-transform group-hover:scale-105"
               />
             </Link>
 

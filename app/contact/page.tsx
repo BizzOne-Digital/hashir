@@ -144,23 +144,6 @@ export default async function ContactPage() {
                         </div>
                       )}
 
-                      {settings?.address && (
-                        <div 
-                          className="flex items-start gap-4 group hover:bg-white/10 p-4 rounded-xl transition-all"
-                          style={{ animation: 'float 6s ease-in-out infinite', animationDelay: '2s' }}
-                        >
-                          <div className="w-12 h-12 bg-mlks-orange rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg">
-                            <MapPin size={24} />
-                          </div>
-                          <div>
-                            <p className="text-white/70 text-sm mb-1">Address</p>
-                            <p className="text-lg font-medium leading-relaxed">
-                              {settings.address}
-                            </p>
-                          </div>
-                        </div>
-                      )}
-
                       {settings?.officeHours && (
                         <div 
                           className="flex items-start gap-4 group hover:bg-white/10 p-4 rounded-xl transition-all"
@@ -289,9 +272,9 @@ export default async function ContactPage() {
                       <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 shadow-xl">
                         <MapPin className="w-10 h-10 text-mlks-cyan" />
                       </div>
-                      <h3 className="text-2xl font-bold mb-3">Visit Us</h3>
-                      <p className="text-white/90 mb-4">Serving Ontario, Canada</p>
-                      <div className="text-sm text-white/70">Location: Ontario</div>
+                      <h3 className="text-2xl font-bold mb-3">Service Areas</h3>
+                      <p className="text-white/90 mb-4">Kitchener, Waterloo, Cambridge &amp; surrounding areas</p>
+                      <div className="text-sm text-white/70">Ontario, Canada</div>
                     </div>
 
                     {/* Hover Decoration */}
